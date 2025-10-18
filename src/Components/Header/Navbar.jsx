@@ -1,6 +1,8 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import { Link } from 'react-router';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 const Navbar = () => {
     const link = <>
@@ -11,7 +13,7 @@ const Navbar = () => {
             <Link to='/about'>About</Link>
         </li>
         <li>
-            <Link to='/details'>Details</Link>
+            <Link to='/readList'>ReadList</Link>
         </li>
     </>
     return (

@@ -6,6 +6,7 @@ import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import Details from '../Pages/BookDetails/BookDetails';
 import BookDetails from '../Pages/BookDetails/BookDetails';
+import ReadList from '../Components/ReadList/ReadList';
 
 
 export const router = createBrowserRouter([
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
             {
                 path: '/about',
                 Component: About
+            },
+            {
+                path: '/readList',
+                Component: ReadList
             },
             {
                 path: '/bookDetails/:id',
