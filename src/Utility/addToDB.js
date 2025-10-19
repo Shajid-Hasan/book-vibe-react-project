@@ -6,7 +6,7 @@ const getStoredBook = () => {
         const storedBookData = JSON.parse(storedBookSTR)
         return storedBookData
     }
-    else{
+    else {
         return [];
     }
 }
@@ -14,10 +14,10 @@ const getStoredBook = () => {
 const addToStoredDB = (id) => {
     const storedBookData = getStoredBook();
 
-    if(storedBookData.includes(id)){
+    if (storedBookData.includes(id)) {
         alert("Already Exsist")
     }
-    else{
+    else {
         storedBookData.push(id);
 
         const data = JSON.stringify(storedBookData);
@@ -25,4 +25,4 @@ const addToStoredDB = (id) => {
     }
 }
 
-export {addToStoredDB}
+export { addToStoredDB, getStoredBook }

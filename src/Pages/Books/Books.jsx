@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import Book from './Book';
+import Book from '../Book/Book';
 
 const Books = ({ data }) => {
     // const [allBooks, setAllBooks] = useState([])

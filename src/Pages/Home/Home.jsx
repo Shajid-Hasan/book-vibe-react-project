@@ -8,11 +8,12 @@ const Home = () => {
     const data = useLoaderData();
     return (
         <div>
+            <title>Book vibe - Home</title>
             <main className='min-h-[calc(100vh-285px)]'>
                 <Banner></Banner>
                 <Books data={data}></Books>
             </main>
-            
+
         </div>
     );
 };
